@@ -1,35 +1,33 @@
 //Budget Controller
 
 var budgetController = (function(){
-  var x = 23;
-  var add = function(a){
-    return x + a;
-  }
-  return {
-    publicTest: function(b){
-      return add(b);
-    }
-  }
+
+
+
 })();
 
 //UI Controller
 
 var UIController = (function() {
 
-    // Some code
+
 
 })();
 
-//App Controller
+//Global App Controller
 
 var controller = (function(budgetCtrl, UICtrl) {
 
-    var z = budgetCtrl.publicTest(5);
+  var ctrlAddItem = function(){
+    console.log('It works!');
+  }
 
-    return {
-      anotherPublic: function(){
-        console.log(z);
-      }
+  document.querySelector('.add__btn').addEventListener('click', ctrlAddItem);
+
+  document.addEventListener('keypress', function(event){
+    if(event.keyCode === 13 || event.which === 13){
+        ctrlAddItem();
     }
+  });
 
 })(budgetController, UIController);
