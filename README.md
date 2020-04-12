@@ -24,5 +24,9 @@ git clone https://github.com/AAdewunmi/Budgety_App.git
 Enjoy :)
 ```
 
+### App UI (Demo)
+
+![Image description](screenshot.png)
+
 **Starter code forked from Jonas Schmedtmann.** - [Jonas Schmedtmann]: <https://github.com/jonasschmedtmann/complete-javascript-course/tree/master/6-budgety/starter>
 
